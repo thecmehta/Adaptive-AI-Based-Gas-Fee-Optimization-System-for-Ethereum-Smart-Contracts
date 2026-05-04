@@ -1,0 +1,31 @@
+{
+  "name": "adaptive-ai-based-gas-fee-optimization-system-for-ethereum-smart-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecmehta/Adaptive-AI-Based-Gas-Fee-Optimization-System-for-Ethereum-Smart-Contracts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thecmehta/Adaptive-AI-Based-Gas-Fee-Optimization-System-for-Ethereum-Smart-Contracts/issues"
+  },
+  "homepage": "https://github.com/thecmehta/Adaptive-AI-Based-Gas-Fee-Optimization-System-for-Ethereum-Smart-Contracts#readme",
+  "directories": {
+    "test": "test"
+  },
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0"
+  }
+}
