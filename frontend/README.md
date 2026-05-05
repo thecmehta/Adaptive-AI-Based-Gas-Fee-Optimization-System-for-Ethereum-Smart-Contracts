@@ -1,70 +1,235 @@
-# Getting Started with Create React App
+# 🚀 Adaptive AI-Based Gas Fee Optimization System
+video tut https://youtu.be/CJ4WsGKsfu4?si=ps9xMDQ7Oc-olJKA
+A hybrid system that combines **smart contract optimization** and **AI-based gas prediction** to reduce Ethereum transaction costs and improve execution efficiency.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+## 🧠 Overview
 
-## Available Scripts
+Gas fees in Ethereum depend on:
+- Smart contract efficiency  
+- Network congestion  
 
-In the project directory, you can run:
+Most solutions address these separately.
 
-### `npm start`
+👉 This project introduces a **novel hybrid approach**:
+- 🔍 Analyze contracts → detect inefficiencies  
+- 🤖 Predict gas → using LSTM model  
+- ⚡ Recommend execution → “Deploy” or “Wait”  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔥 Features
 
-### `npm test`
+### 🧾 Smart Contract Analyzer
+- Detects:
+  - Dynamic arrays
+  - Unoptimized loops
+  - Excess storage usage
+- Suggests gas-efficient improvements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 🤖 AI Gas Prediction
+- Uses **LSTM model**
+- Inputs:
+  - Base fee  
+  - Priority fee  
+  - Historical trends  
+- Outputs:
+  - Predicted gas value  
+  - Execution decision  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📊 Live Gas Dashboard
+- Real-time gas data (Blocknative API)
+- Auto-refresh every 10 seconds
+- Visual indicators (low / medium / high gas)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 📈 Visualization
+- Gas trend chart
+- AI prediction insights
+- Clean dashboard UI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ⚡ Transaction Execution
+- Connects with MetaMask
+- Executes contract functions
+- Displays transaction hash
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏗️ Architecture
+User Input Contract
+↓
+Contract Analyzer (Rule-based)
+↓
+Gas Data (API) → LSTM Model
+↓
+Prediction Engine
+↓
+Decision: Deploy / Wait
+↓
+Frontend Dashboard + Web3 Execution
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Tech Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend
+- React.js
+- Chart.js
+- Axios
 
-### Code Splitting
+### Backend
+- Flask (Python)
+- LSTM Model (TensorFlow / NumPy / Pandas)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Blockchain
+- Ethereum (Sepolia)
+- Ethers.js
+- MetaMask
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📂 Project Structure
+project/
+│
+├── frontend/
+│   ├── components/
+│   │   ├── ContractAnalyzer.js
+│   │   ├── GasPanel.js
+│   │   ├── PredictionPanel.js
+│   │   ├── GasChart.js
+│   │   └── ExecuteButton.js
+│   └── App.js
+│
+├── backend/
+│   ├── api.py
+│   ├── lstm_model.py
+│   ├── gas_collector.py
+│   ├── optimizer.py
+│   └── gas_data.csv
+│
+└── README.md
+---## ⚙️ Setup Instructions### 1️⃣ Clone the repository```bashgit clone https://github.com/your-username/project-name.gitcd project-name
 
-### Making a Progressive Web App
+2️⃣ Backend Setup (Python 3.10 recommended)
+cd backendpip install flask flask-cors numpy pandas tensorflowpython api.py
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3️⃣ Frontend Setup
+cd frontendnpm installnpm start
 
-### Advanced Configuration
+4️⃣ Run Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Backend → http://127.0.0.1:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Frontend → http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+📊 Example Workflow
+
+
+Paste smart contract
+
+
+Click Analyze
+
+
+System:
+
+
+detects inefficiencies
+
+
+predicts gas
+
+
+
+
+Output:
+
+
+optimized suggestions
+
+
+AI decision
+
+
+
+
+Execute transaction (if optimal)
+
+
+
+📚 Research Contribution
+This project combines:
+
+
+Smart contract optimization
+
+
+Gas prediction using AI
+
+
+Hybrid decision system
+
+
+🔥 Novelty
+Most works focus on:
+
+
+optimization ❌ OR prediction ❌
+
+
+👉 This system combines:
+Optimization + Prediction + Execution
+
+📖 References
+
+
+Smart Contract Optimization (Kuhlman et al.)
+
+
+Gas Fee Prediction using AI (Olasehinde)
+
+
+GasAgent Multi-Agent Framework
+
+
+Gas Estimation & Optimization (Li)
+
+
+GASOL Optimization Framework
+
+
+
+🚀 Future Work
+
+
+Reinforcement Learning for better prediction
+
+
+Real-time blockchain data integration
+
+
+Auto contract rewriting
+
+
+Deployment on mainnet
+
+
+
+🧑‍💻 Author
+Chirag Mehta
+LNMIIT Jaipur
+
